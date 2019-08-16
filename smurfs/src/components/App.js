@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import {fetchSmurfs} from "../actions"
 import SmurfList from './SmurfList';
+import SmurfForm from './SmurfForm'
 import "./App.css";
 class App extends Component {
   componentDidMount(){
@@ -10,6 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <SmurfForm />
         <SmurfList smurfs={this.props.smurfs}/>
       </div>
     );

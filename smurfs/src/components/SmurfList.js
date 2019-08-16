@@ -3,10 +3,14 @@ import Smurf from "./Smurf";
 
  const SmurfList = props => {
     return(
-        <div>
-        {props.smurfs.map(smurf => 
-            {return <Smurf key={smurf.id} smurf={smurf} />;}
-        )}
+        <div className='smurf-list'>
+                {props.smurfs.map(smurf => 
+                    {return (
+                        <div className='smurf-card'>
+                            <Smurf key={smurf.id} smurf={smurf} />
+                        </div>
+                        );}
+                    )}     
         </div>
     );
 };
