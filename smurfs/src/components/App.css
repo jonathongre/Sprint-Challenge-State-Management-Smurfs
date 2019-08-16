@@ -2,10 +2,17 @@ html {
   background-image: url('https://i.pinimg.com/originals/dd/5d/32/dd5d32ac03db6ea2c9aa0fc3cc725b39.jpg');
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .App {
   text-align: center;
+}
+
+.App img {
+  margin-top: 2rem;
+  width: 50%;
 }
 
 .smurf-form {
@@ -27,6 +34,10 @@ html {
   font-size: 2rem;
 }
 
+.smurf-form img {
+  width: 80%;
+}
+
 .smurf-form form {
   display: flex;
   flex-direction: column;
@@ -35,6 +46,7 @@ html {
 .smurf-form input {
   width: 10rem;
   margin: 1rem 0;
+  box-shadow: 1px 2px 3px black;
   
 }
 
@@ -76,6 +88,11 @@ html {
   border-radius: 60px;
 }
 
+.smurf-card input {
+  margin: 0.5rem 0;
+  box-shadow: 1px 2px 3px black;
+}
+
 .smurf-card button {
   margin: 1rem;
   padding: 0.5rem 0;
@@ -96,4 +113,8 @@ html {
 
 .smurf-card button:active {
   box-shadow: none;
+}
+
+.finish-edit-btn {
+  min-width: 70%;
 }

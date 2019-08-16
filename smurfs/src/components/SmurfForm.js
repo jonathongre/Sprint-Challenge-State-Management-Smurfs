@@ -26,7 +26,8 @@ class SmurfForm extends React.Component {
     render(){
         return(
             <div className='smurf-form'>
-                <h1>Create Your Own Smurf</h1>
+                <h1>Create a Smurf</h1>
+                <img src='https://tugta.com/wp-content/uploads/2016/03/smurfs.png' alt='The Smurfs'/>
                 <form onSubmit={this.submitHandler}>
                     <input onChange = {this.changeHandler} type="text"   name="name"   placeholder="Name"   value={this.state.name}   required />
                     <input onChange = {this.changeHandler} type="number" name="age"    placeholder="Age"    value={this.state.age}    required />

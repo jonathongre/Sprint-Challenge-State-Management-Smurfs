@@ -31,7 +31,7 @@ const Smurf = props => {
             }}><input type='text' name='name' value={smurf.name} onChange={(e) => editSmurfHandler(e)} placeholder='Name' />
                 <input type='number' name='age' value={smurf.age} onChange={(e) => editSmurfHandler(e)} placeholder='Age' />
                 <input type='text' name='height' value={smurf.height} onChange={(e) => editSmurfHandler(e)} placeholder='Height' />
-                <button>Finish Editing</button> </form> : null}
+                <button className='finish-edit-btn'>Finish Editing</button> </form> : null}
         </div>
     )
 }
