@@ -1,28 +1,120 @@
+html {
+  background-image: url('https://i.pinimg.com/originals/dd/5d/32/dd5d32ac03db6ea2c9aa0fc3cc725b39.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App img {
+  margin-top: 2rem;
+  width: 50%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.smurf-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  width: 25%;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 60px;
+  background: #c1d0f8;
 }
 
-.App-title {
-  font-size: 1.5em;
+.smurf-form h1 {
+  text-transform: uppercase;
+	background: linear-gradient(to right, #8477fd 0%, #1c03fa 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 2rem;
 }
 
-.App-intro {
-  font-size: large;
+.smurf-form img {
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.smurf-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.smurf-form input {
+  width: 10rem;
+  margin: 1rem 0;
+  box-shadow: 1px 2px 3px black;
+  
+}
+
+.smurf-form button {
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  background: #83a2f8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px black;
+  border: none;
+  border-radius: 60px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.smurf-form button:hover {
+  background: #596faa;
+}
+
+.smurf-form button:active {
+  box-shadow: none;
+}
+
+.smurf-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto 10rem;
+}
+
+.smurf-card {
+  margin: 2rem 2rem;
+  background: #c1d0f8;
+  color: #fff;
+  text-shadow: 1px 2px 3px black;
+  width: 15rem;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 60px;
+}
+
+.smurf-card input {
+  margin: 0.5rem 0;
+  box-shadow: 1px 2px 3px black;
+}
+
+.smurf-card button {
+  margin: 1rem;
+  padding: 0.5rem 0;
+  width: 30%;
+  background: #83a2f8;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px black;
+  border: none;
+  border-radius: 60px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.smurf-card button:hover {
+  background: #596faa;
+}
+
+.smurf-card button:active {
+  box-shadow: none;
+}
+
+.finish-edit-btn {
+  min-width: 70%;
 }
